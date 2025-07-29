@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Estate Watermarker – Instantly Add Your Logo</title>
+  <meta name="description" content="Add your agency's logo to real estate images instantly. No sign-up, no uploads saved. Free and fast watermarking tool.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Clean CSS styling for layout and mobile responsiveness */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      max-width: 700px;
+      margin: 0.5rem auto;
+      font-size: 1.1rem;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+    }
+    .cta a {
+      padding: 0.75rem 1.5rem;
+      background: #ff5f57;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #e44b47;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    form {
+      background: white;
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    }
+    input[type="email"], textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      min-height: 100px;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      background: #0070f3;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./estlogo.png" alt="Logo" style="height: 100px;">
+    <h1>🏡 Real Estate Watermarker</h1>
+    <p class="lead">Add your agency's logo to property images instantly. No logins, no storage, just quick downloads for listings and marketing.</p>
+  </header>
+  <div class="section">
+    <h2>How It Works</h2>
+    <p>Upload your property photo, add your logo, and download the watermarked image. Perfect for online listings, flyers, and social media. Everything is done instantly in the browser – no files saved.</p>
+  </div>
+
+  <div class="section">
+    <div class="cta">
+      <a href="https://your-demo-link.streamlit.app" target="_blank">🚀 Try Live Demo</a>
+    </div>
+  </div>
+
+  <section class="section gallery">
+    <img src="./img1.jpg" alt="Original">
+    <img src="./watermarked_img1.jpg" alt="Original">
+    <img src="./img2.jpg" alt="Watermaked">
+    <img src="./watermarked_img2.jpg" alt="Watermaked">
+  </section>
+  <div class="section">
+    <h2>Features</h2>
+    <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+      <li>✅ Logo centered on the image</li>
+      <li>✅ Logo transparency (50%)</li>
+      <li>✅ Instant watermark preview and download</li>
+      <li>✅ Works on phone or desktop</li>
+      <li>✅ No login, no data storage</li>
+    </ul>
+  </div>
+
+  <form name="feedback" method="POST" data-netlify="true">
+    <h2>💬 Share Feedback</h2>
+    <p>Let us know how this tool works for you or what features you’d like.</p>
+    <input type="email" name="email" placeholder="Your email (optional)" />
+    <textarea name="message" placeholder="Your feedback..."></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <footer>
+    &copy; ESTATEMARK inc
+  </footer>
+
+</body>
+</html>
