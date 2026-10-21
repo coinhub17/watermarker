@@ -12,7 +12,7 @@ logo_file = st.file_uploader("Upload watermark logo (JPEG,JPG,PNG)", type=["jpg"
 if uploaded_images and logo_file:
     logo = Image.open(logo_file).convert("RGBA")
     alpha = logo.split()[3]
-    alpha = ImageEnhance.Brightness(alpha).enhance(0.4)
+    alpha = ImageEnhance.Brightness(alpha).enhance(0.65)
     logo.putalpha(alpha)
 
     zip_buffer = io.BytesIO()
