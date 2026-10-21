@@ -25,8 +25,9 @@ if uploaded_images and logo_file:
             logo_size = min(image.size) // 2
             logo_copy.thumbnail((logo_size, logo_size), Image.LANCZOS)
 
-            x = (image.width - logo_copy.width) // 2
-            y = (image.height - logo_copy.height) // 2
+            margin = 20
+            x = image.width - logo_copy.width - margin
+            y = margin
 
             result = image.copy()
             result.paste(logo_copy, (x, y), logo_copy)
